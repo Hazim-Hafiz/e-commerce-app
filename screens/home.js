@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, Image, ScrollView } from 'react-native'
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Octicons from 'react-native-vector-icons/Octicons';
@@ -46,28 +46,28 @@ export default function Home() {
             </View>
             <View style={tw.style('flex flex-row justify-between mx-7 mt-5')}>
                 <View style={tw.style('flex flex-col items-center')}>
-                    <TouchableOpacity style={tw.style('h-17 w-17 bg-gray-200 rounded-lg justify-center items-center')}>
-                        <MaterialIcons name="category" size={30} color="black" />
+                    <TouchableOpacity style={tw.style('h-17 w-17 bg-white rounded-lg justify-center items-center')}>
+                        <MaterialIcons name="category" size={30} color="#7552cc" />
                     </TouchableOpacity>
-                    <Text style={tw.style('text-xs')}>Category</Text>
+                    <Text style={tw.style('text-xs text-purple-600 mt-2')}>Category</Text>
                 </View>
                 <View style={tw.style('flex flex-col items-center')}>
-                    <TouchableOpacity style={tw.style('h-17 w-17 bg-gray-200 rounded-lg justify-center items-center')}>
-                        <Octicons name="git-compare" size={30} color="black" />
+                    <TouchableOpacity style={tw.style('h-17 w-17 bg-white rounded-lg justify-center items-center')}>
+                        <Octicons name="git-compare" size={30} color="#7552cc" />
                     </TouchableOpacity>
-                    <Text style={tw.style('text-xs')}>Compare</Text>
+                    <Text style={tw.style('text-xs text-purple-600 mt-2')}>Compare</Text>
                 </View>
                 <View style={tw.style('flex flex-col items-center')}>
-                    <TouchableOpacity style={tw.style('h-17 w-17 bg-gray-200 rounded-lg justify-center items-center')}>
-                        <AntDesign name="tagso" size={30} color="black" />
+                    <TouchableOpacity style={tw.style('h-17 w-17 bg-white rounded-lg justify-center items-center')}>
+                        <AntDesign name="tagso" size={30} color="#7552cc" />
                     </TouchableOpacity>
-                    <Text style={tw.style('text-xs')}>Sales</Text>
+                    <Text style={tw.style('text-xs text-purple-600 mt-2')}>Sales</Text>
                 </View>
                 <View style={tw.style('flex flex-col items-center')}>
-                    <TouchableOpacity style={tw.style('h-17 w-17 bg-gray-200 rounded-lg justify-center items-center')}>
-                        <FontAwesome name="money" size={30} color="black" />
+                    <TouchableOpacity style={tw.style('h-17 w-17 bg-white rounded-lg justify-center items-center')}>
+                        <FontAwesome name="money" size={30} color="#7552cc" />
                     </TouchableOpacity>
-                    <Text style={tw.style('text-xs')}>Offers</Text>
+                    <Text style={tw.style('text-xs text-purple-600 mt-2')}>Offers</Text>
                 </View>
             </View>
             <View style={[tw.style('h-full w-100 bg-gray-200 mt-10'),
@@ -82,7 +82,8 @@ export default function Home() {
                         <Text style={tw.style('text-white text-md p-2')}>View All</Text>
                     </TouchableOpacity>
                 </View>
-                <View style={tw.style('flex flex-row justify-around mt-5 ml-4')}>
+                <ScrollView horizontal={true}>  
+                <View style={tw.style('flex flex-row justify-between mt-5 ml-4')}>
                     <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden')}>
                         <Image style={tw.style('h-30 w-30 ml-0')} source={require('../assets/images/shoe2.jpeg')} />
                         <Text style={tw.style('text-black font-bold pl-2')}>Nike</Text>
@@ -93,7 +94,7 @@ export default function Home() {
                         </View>
 
                     </View>
-                    <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden')}>
+                    <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden ml-3')}>
                         <Image style={tw.style('h-30 w-30 ml-0')} source={require('../assets/images/shoe3.jpg')} />
                         <Text style={tw.style('text-black font-bold pl-2')}>Nike</Text>
                         <Text style={tw.style('text-gray-400 text-xs pl-2')}>7 colors</Text>
@@ -103,7 +104,17 @@ export default function Home() {
                         </View>
 
                     </View>
-                    <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden')}>
+                    <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden ml-3')}>
+                        <Image style={tw.style('h-30 w-30 ml-0')} source={require('../assets/images/shoe4.jpg')} />
+                        <Text style={tw.style('text-black font-bold pl-2')}>Nike</Text>
+                        <Text style={tw.style('text-gray-400 text-xs pl-2')}>7 colors</Text>
+                        <View style={tw.style('flex flex-row justify-between mt-2 pl-2')}>
+                            <Text style={tw.style('text-gray-700 text-xs')}>150 $</Text>
+                            <Text style={tw.style('text-black text-2xl text-center mr-3')}>+</Text>
+                        </View>
+
+                    </View>
+                    <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden ml-3')}>
                         <Image style={tw.style('h-30 w-30 ml-0')} source={require('../assets/images/shoe4.jpg')} />
                         <Text style={tw.style('text-black font-bold pl-2')}>Nike</Text>
                         <Text style={tw.style('text-gray-400 text-xs pl-2')}>7 colors</Text>
@@ -114,6 +125,7 @@ export default function Home() {
 
                     </View>
                 </View>
+                </ScrollView>
                 
             </View>
         </View>
