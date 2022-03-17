@@ -96,42 +96,62 @@ export default function Home({ navigation }) {
                         >
                             <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden')}>
                                 <Image style={tw.style('h-30 w-30 ml-0')} source={require('../assets/images/shoe2.jpeg')} />
+                                <View >
+                                    <EvilIcons style={tw.style('mt--29 ml-23')} name="heart" size={25} color="black" />
+                                </View>
                                 <Text style={tw.style('text-black font-bold pl-2')}>Nike</Text>
                                 <Text style={tw.style('ml-1 items-center justify-center bg-gray-200 text-black rounded-lg h-5 w-15 text-xs pl-2 mt-1')}>7 colors</Text>
                                 <View style={tw.style('flex flex-row justify-between mt-2 pl-2')}>
                                     <Text style={tw.style('text-gray-700 text-xs')}>150 $</Text>
-                                    <Text style={tw.style('text-black text-2xl text-center mr-3')}>+</Text>
+                                    <View style={tw.style('mr-1')}>
+                                        <Octicons name="diff-added" size={20} color="black" />
+                                    </View>
                                 </View>
 
                             </View>
                         </TouchableOpacity>
                         <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden ml-3')}>
                             <Image style={tw.style('h-30 w-30 ml-0')} source={require('../assets/images/shoe3.jpg')} />
+                            <View >
+                                <EvilIcons style={tw.style('mt--29 ml-23')} name="heart" size={25} color="black" />
+                            </View>
                             <Text style={tw.style('text-black font-bold pl-2')}>Nike</Text>
                             <Text style={tw.style('ml-1 items-center justify-center bg-gray-200 text-black rounded-lg h-5 w-15 text-xs pl-2 mt-1')}>7 colors</Text>
                             <View style={tw.style('flex flex-row justify-between mt-2 pl-2')}>
                                 <Text style={tw.style('text-gray-700 text-xs')}>150 $</Text>
-                                <Text style={tw.style('text-black text-2xl text-center mr-3')}>+</Text>
+                                <View style={tw.style('mr-1')}>
+                                        <Octicons name="diff-added" size={20} color="black" />
+                                </View>
                             </View>
 
                         </View>
                         <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden ml-3')}>
                             <Image style={tw.style('h-30 w-30 ml-0')} source={require('../assets/images/shoe4.jpg')} />
+                            <View >
+                                <EvilIcons style={tw.style('mt--29 ml-23')} name="heart" size={25} color="black" />
+                            </View>
                             <Text style={tw.style('text-black font-bold pl-2')}>Nike</Text>
                             <Text style={tw.style('ml-1 items-center justify-center bg-gray-200 text-black rounded-lg h-5 w-15 text-xs pl-2 mt-1')}>7 colors</Text>
                             <View style={tw.style('flex flex-row justify-between mt-2 pl-2')}>
                                 <Text style={tw.style('text-gray-700 text-xs')}>150 $</Text>
-                                <Text style={tw.style('text-black text-2xl text-center mr-3')}>+</Text>
+                                <View style={tw.style('mr-1')}>
+                                        <Octicons name="diff-added" size={20} color="black" />
+                                </View>
                             </View>
 
                         </View>
                         <View style={tw.style('flex flex-col bg-white w-30 h-50 rounded-xl overflow-hidden ml-3')}>
                             <Image style={tw.style('h-30 w-30 ml-0')} source={require('../assets/images/shoe4.jpg')} />
+                            <View >
+                                <EvilIcons style={tw.style('mt--29 ml-23')} name="heart" size={25} color="black" />
+                            </View>
                             <Text style={tw.style('text-black font-bold pl-2')}>Nike</Text>
                             <Text style={tw.style('ml-1 items-center justify-center bg-gray-200 text-black rounded-lg h-5 w-15 text-xs pl-2 mt-1')}>7 colors</Text>
                             <View style={tw.style('flex flex-row justify-between mt-2 pl-2')}>
                                 <Text style={tw.style('text-gray-700 text-xs')}>150 $</Text>
-                                <Text style={tw.style('text-black text-2xl text-center mr-3')}>+</Text>
+                                <View style={tw.style('mr-1')}>
+                                        <Octicons name="diff-added" size={20} color="black" />
+                                </View>
                             </View>
 
                         </View>
