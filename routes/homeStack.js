@@ -3,6 +3,7 @@ import { createAppContainer } from "react-navigation";
 import tw, { create } from 'twrnc';
 import Login from '../screens/login';
 import Home from '../screens/home';
+import ProductDetails from "../screens/details";
 
 const screens = {
     Login: {
@@ -11,6 +12,15 @@ const screens = {
     },
     Home: {
         screen: Home,
+        navigationOptions:{ 
+            headerStyle: tw.style('bg-purple-600'),
+            headerTitleStyle: tw.style('text-white'),
+            headerLeft: null,
+            header:  null
+    },
+    },
+    ProductDetails: {
+        screen: ProductDetails,
         navigationOptions:{ 
             headerStyle: tw.style('bg-purple-600'),
             headerTitleStyle: tw.style('text-white'),
