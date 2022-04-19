@@ -1,6 +1,5 @@
 import { View, Text, TextInput, TouchableOpacity, Image, ScrollView } from 'react-native'
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 import tw from 'twrnc';
 

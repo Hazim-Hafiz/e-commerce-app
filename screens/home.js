@@ -6,15 +6,17 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
-
-
-
 import tw from 'twrnc';
 
 export default function Home({ navigation }) {
+    // const {data} = route.params;
+    const user = navigation.getParam('user');
+
     const gotoDetails = () => {
         navigation.navigate('ProductDetails')
     }
+
+
     return(
         <View style={tw.style('flex flex-col')}>
             <View style={[tw.style(' justify-center bg-purple-600 pb-20 h-40 rounded-bl-full'),{
@@ -22,13 +24,15 @@ export default function Home({ navigation }) {
                 borderBottomRightRadius: 50,
                 } ]}>
                 <View style={tw.style('flex flex-row justify-between mx-5 items-center mt-auto')}>
-                    <Text style={tw.style('text-lg text-white')}>E-commerce</Text>
+                    <Text style={tw.style('text-lg text-white')}>Hi, {user.name}</Text>
                     <View style={tw.style('flex flex-row justify-between')}>
                         <TextInput 
                             style={tw.style('w-40 h-12 pl-2 bg-gray-200 rounded-lg')} 
                             placeholder="Search"
                             />
-                        <TouchableOpacity style={tw.style('w-12 h-12 rounded-lg ml-1 justify-center items-center bg-gray-200')}>
+                        <TouchableOpacity style={tw.style('w-12 h-12 rounded-lg ml-1 justify-center items-center bg-gray-200')}
+                        onPress={()=> getUser()}
+                        >
                         <EvilIcons name="camera" size={30} color="black" />
 
                         </TouchableOpacity>
@@ -186,8 +190,8 @@ export default function Home({ navigation }) {
                         </TouchableOpacity>
                     </View>
                 </View>
-                    
-            </View>
+
+            </View> 
 
         </View>
     )
