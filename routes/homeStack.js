@@ -2,12 +2,17 @@ import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 import tw, { create } from 'twrnc';
 import Login from '../screens/login';
+import Signup from '../screens/signup';
 import Home from '../screens/home';
 import ProductDetails from "../screens/details";
 
 const screens = {
     Login: {
         screen: Login,
+        navigationOptions: { headerShown: false }
+    },
+    Signup: {
+        screen: Signup,
         navigationOptions: { headerShown: false }
     },
     Home: {

@@ -1679,6 +1679,18 @@
   "resolved" "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   "version" "2.1.2"
 
+"autoprefixer@^10.0.2":
+  "integrity" "sha512-Tm8JxsB286VweiZ5F0anmbyGiNI3v3wGv3mz9W+cxEDYB/6jbnj6GM9H9mK3wIL8ftgl+C07Lcwb8PG5PCCPzA=="
+  "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.4.tgz"
+  "version" "10.4.4"
+  dependencies:
+    "browserslist" "^4.20.2"
+    "caniuse-lite" "^1.0.30001317"
+    "fraction.js" "^4.2.0"
+    "normalize-range" "^0.1.2"
+    "picocolors" "^1.0.0"
+    "postcss-value-parser" "^4.2.0"
+
 "babel-core@^7.0.0-bridge.0":
   "integrity" "sha512-poPX9mZH/5CSanm50Q+1toVci6pv5KSRv/5TWCwtzQS5XEwn40BcCrgIeMFWP9CKKIniKXNxoIOnOq4VVlGXhg=="
   "resolved" "https://registry.npmjs.org/babel-core/-/babel-core-7.0.0-bridge.0.tgz"
@@ -1864,13 +1876,13 @@
   dependencies:
     "fill-range" "^7.0.1"
 
-"browserslist@^4.17.5", "browserslist@^4.19.1":
-  "integrity" "sha512-bnpOoa+DownbciXj0jVGENf8VYQnE2LNWomhYuCsMmmx9Jd9lwq0WXODuwpSsp8AVdKM2/HorrzxAfbKvWTByQ=="
-  "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.20.0.tgz"
-  "version" "4.20.0"
+"browserslist@^4.17.5", "browserslist@^4.19.1", "browserslist@^4.20.2":
+  "integrity" "sha512-CQOBCqp/9pDvDbx3xfMi+86pr4KXIf2FDkTTdeuYw8OxS9t898LA1Khq57gtufFILXpfgsSx5woNgsBgvGjpsA=="
+  "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.20.2.tgz"
+  "version" "4.20.2"
   dependencies:
-    "caniuse-lite" "^1.0.30001313"
-    "electron-to-chromium" "^1.4.76"
+    "caniuse-lite" "^1.0.30001317"
+    "electron-to-chromium" "^1.4.84"
     "escalade" "^3.1.1"
     "node-releases" "^2.0.2"
     "picocolors" "^1.0.0"
@@ -1972,7 +1984,7 @@
   "resolved" "https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz"
   "version" "6.3.0"
 
-"caniuse-lite@^1.0.30001313":
+"caniuse-lite@^1.0.30001317":
   "integrity" "sha512-xIZLh8gBm4dqNX0gkzrBeyI86J2eCjWzYAs40q88smG844YIrN4tVQl/RhquHvKEKImWWFIVh1Lxe5n1G/N+GQ=="
   "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001317.tgz"
   "version" "1.0.30001317"
@@ -2471,7 +2483,7 @@
   "resolved" "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
   "version" "1.1.1"
 
-"electron-to-chromium@^1.4.76":
+"electron-to-chromium@^1.4.84":
   "integrity" "sha512-b+DdcyOiZtLXHdgEG8lncYJdxbdJWJvclPNMg0eLUDcSOSO876WA/pYjdSblUTd7eJdIs4YdIxHWGazx7UPSJw=="
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.84.tgz"
   "version" "1.4.84"
@@ -2873,6 +2885,11 @@
   "integrity" "sha1-gQaNKVqBQuwKxybG4iAMMPttXoA="
   "resolved" "https://registry.npmjs.org/for-in/-/for-in-1.0.2.tgz"
   "version" "1.0.2"
+
+"fraction.js@^4.2.0":
+  "integrity" "sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA=="
+  "resolved" "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
+  "version" "4.2.0"
 
 "fragment-cache@^0.2.1":
   "integrity" "sha1-QpD60n8T6Jvn8zeZxrxaCr//DRk="
@@ -4299,6 +4316,11 @@
   "resolved" "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz"
   "version" "3.0.0"
 
+"normalize-range@^0.1.2":
+  "integrity" "sha1-LRDAa9/TEuqXd2laTShDlFa3WUI="
+  "resolved" "https://registry.npmjs.org/normalize-range/-/normalize-range-0.1.2.tgz"
+  "version" "0.1.2"
+
 "npm-run-path@^2.0.0":
   "integrity" "sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8="
   "resolved" "https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz"
@@ -4623,7 +4645,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^8.2.14", "postcss@^8.3.3", "postcss@^8.4.6":
+"postcss@^8.1.0", "postcss@^8.2.14", "postcss@^8.3.3", "postcss@^8.4.6":
   "integrity" "sha512-2tXEqGxrjvAO6U+CJzDL2Fk2kPHTv1jQsYkSoMeOis2SsYaXRO2COxTdQp99cYvif9JTXaAk9lYGc3VhJt7JPQ=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.8.tgz"
   "version" "8.4.8"
@@ -4772,6 +4794,11 @@
   "integrity" "sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg=="
   "resolved" "https://registry.npmjs.org/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz"
   "version" "1.3.1"
+
+"react-native-orientation-loading-overlay@^0.1.6":
+  "integrity" "sha512-SbsBFnZIejF/zZy3nL2vmmZkUovQ9ed28b6p2x8ZhAYoseHyO3dS0iahhPu1eSneGE2+XVw+zoKHmxOmVFmKXw=="
+  "resolved" "https://registry.npmjs.org/react-native-orientation-loading-overlay/-/react-native-orientation-loading-overlay-0.1.6.tgz"
+  "version" "0.1.6"
 
 "react-native-reanimated@~2.3.1":
   "integrity" "sha512-uQofwsWUoKLY4QDgSdNbRxnqQDaQEPLLBNO9SP64JfQ2fDRJD5rjb4d3S29F0z9FqTnsWEwTL2Sl0spdx9xvHA=="

@@ -7,15 +7,15 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import tw from 'twrnc';
+import { useState, useEffect } from 'react';
 
 export default function Home({ navigation }) {
-    // const {data} = route.params;
+
     const user = navigation.getParam('user');
 
     const gotoDetails = () => {
         navigation.navigate('ProductDetails')
     }
-
 
     return(
         <View style={tw.style('flex flex-col')}>

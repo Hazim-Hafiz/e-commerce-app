@@ -1,6 +1,8 @@
 import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useState } from 'react';
 import tw from 'twrnc';
+import OrientationLoadingOverlay from 'react-native-orientation-loading-overlay';
+
 
 
 export default function Login({ navigation }) {
@@ -8,6 +10,7 @@ export default function Login({ navigation }) {
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
 
   let data = [];
@@ -19,7 +22,13 @@ export default function Login({ navigation }) {
         )
     }
 
+    const gotoSignup = () => {
+      console.log(data)
+      navigation.navigate('Signup')
+  }
+
     const login = async () => {
+      setIsLoading(true);
       let response = await fetch(
         'http://192.168.8.104:8000/api/login',
         {
@@ -30,7 +39,7 @@ export default function Login({ navigation }) {
       );
       data = await response.json();
       // console.log(data);
-
+      setIsLoading(false);
       if(data.success){
         setEmailError(false);
         setPasswordError(false);
@@ -62,6 +71,13 @@ export default function Login({ navigation }) {
           >
             <Text style={tw.style('text-center text-white')}>Login</Text>
           </TouchableOpacity>
+          <OrientationLoadingOverlay
+            visible={isLoading}
+            color="white"
+            indicatorSize="large"
+            messageFontSize={24}
+            message="Loading..."
+          />
           
         </View>
         <View style={tw.style('justify-center items-center bg-white')}>
@@ -77,7 +93,9 @@ export default function Login({ navigation }) {
                 <Image style={tw.style('h-10 w-10')} source={require('../assets/images/twitter.png')} />
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={tw.style('w-80 h-12 mt-10 rounded-3xl justify-center items-center bg-purple-700')}>
+          <TouchableOpacity style={tw.style('w-80 h-12 mt-10 rounded-3xl justify-center items-center bg-purple-700')}
+          onPress={()=> gotoSignup()}
+          >
             <Text style={tw.style('text-center text-white')}>Sign up</Text>
           </TouchableOpacity>
         </View>
